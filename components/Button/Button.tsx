@@ -15,7 +15,6 @@ const Button = ({
         px-[32px]
         py-[12px]
         text-white
-        theme-violet
         ${className}
       `}
       {...props}
