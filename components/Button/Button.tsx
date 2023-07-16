@@ -12,8 +12,8 @@ const Button = ({
       className={`
         bg-primary
         rounded-[8px]
-        px-[32px]
-        py-[12px]
+        px-6
+        py-2xs
         text-white
         ${className}
       `}
