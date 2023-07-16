@@ -24,6 +24,11 @@
     --text-secondary: 92, 92, 92;
     --text-tertiary: 116, 116, 116;
     --text-disabled: 138, 138, 138;
+/* Screens */
+  --screen-mobile: 640px;
+  --screen-tablet: 1024px;
+  --screen-desktop: 1440px;
+  --screen-tv: 1920px;
   }
 
   .theme-violet {

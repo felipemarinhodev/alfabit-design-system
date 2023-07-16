@@ -11,6 +11,12 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      mobile: 'var(--screen-mobile)',
+      tablet: 'var(--screen-tablet)',
+      desktop: 'var(--screen-desktop)',
+      tv: 'var(--screen-tv)'
+    },
     extend: {
       colors: {
         primary: toRgba('--primary'),
