@@ -11,6 +11,9 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      mulish: 'Mulish, sans-serif'
+    },
     screens: {
       mobile: 'var(--screen-mobile)',
       tablet: 'var(--screen-tablet)',

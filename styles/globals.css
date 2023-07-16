@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Mulish';
+  src: url('../fonts/Mulish-Regular.woff2') format('woff2'),
+    url('../fonts/Mulish-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Mulish', sans-serif;
+}
 @layer base {
   :root {
     /* Colors */
@@ -26,10 +38,10 @@
     --text-disabled: 138, 138, 138;
     
     /* Screens */
-      --screen-mobile: 640px;
-      --screen-tablet: 1024px;
-      --screen-desktop: 1440px;
-      --screen-tv: 1920px;
+    --screen-mobile: 640px;
+    --screen-tablet: 1024px;
+    --screen-desktop: 1440px;
+    --screen-tv: 1920px;
 
       /* Shadows */
     --shadow-sm: 0px 0px 10px rgba(132, 132, 132 15%);
