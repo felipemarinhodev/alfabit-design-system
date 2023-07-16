@@ -68,6 +68,12 @@ module.exports = {
       },
       blur: {
         default: 'var(--blur)'
+      },
+      borderRadius: {
+        none: 'var(--border-radius-none) /* 0px */',
+        sm: 'var(--border-radius-sm) /* 4px */',
+        md: 'var(--border-radius-md) /* 8px */',
+        lg: 'var(--border-radius-lg) /* 16px */',
       }
     },
   },
