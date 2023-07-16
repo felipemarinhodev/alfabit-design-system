@@ -21,7 +21,7 @@ const Button = ({
     )
   }
   return Btn(disabled
-    ? 'bg-bg-disabled text-text-disabled'
+    ? 'bg-disabled text-disabled'
     : 'bg-primary text-white')
 }
 
