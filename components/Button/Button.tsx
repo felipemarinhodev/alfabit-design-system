@@ -5,24 +5,24 @@ export type ButtonProps = {
 const Button = ({
   children,
   className,
+  disabled,
   ...props
 }: ButtonProps) => {
-  return (
-    <button
-      className={`
-        bg-primary
-        rounded-md
-        px-6
-        py-2xs
-        text-sm
-        text-white
-        ${className}
-      `}
-      {...props}
-    >
-      {children}
-    </button>
-  )
+  const generalStyle = 'rounded-md px-6 py-2xs';
+  const Btn = (classes: string) => {
+    return (
+      <button
+        className={`${generalStyle} ${classes} ${className}`}
+        disabled={disabled}
+        {...props}
+      >
+        {children}
+      </button>
+    )
+  }
+  return Btn(disabled
+    ? 'bg-bg-disabled text-text-disabled'
+    : 'bg-primary text-white')
 }
 
 export default Button;
