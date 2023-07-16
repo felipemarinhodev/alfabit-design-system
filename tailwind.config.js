@@ -43,6 +43,9 @@ module.exports = {
         focus: 'var(--shadow-focus)',
         outline: 'var(--shadow-outline)',
         'button-focus': 'var(--shadow-button-focus)',
+      },
+      blur: {
+        default: 'var(--blur)'
       }
     },
   },
