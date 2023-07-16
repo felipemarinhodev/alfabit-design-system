@@ -14,6 +14,7 @@ const Button = ({
         rounded-md
         px-6
         py-2xs
+        text-sm
         text-white
         ${className}
       `}

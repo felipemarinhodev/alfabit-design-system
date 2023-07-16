@@ -42,6 +42,13 @@ module.exports = {
       8: 'var(--spacing-2xl) /* 48px */',
       9: 'var(--spacing-4xl) /* 56px */',
     },
+    fontSize: {
+      xs: 'var(--text-xs) /* 12px */',
+      sm: 'var(--text-sm) /* 14px */',
+      md: 'var(--text-md) /* 16px */',
+      lg: 'var(--text-lg) /* 18px */',
+      xl: 'var(--text-xl) /* 20px */',
+    },
     extend: {
       colors: {
         primary: toRgba('--primary'),
