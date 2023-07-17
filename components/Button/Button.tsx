@@ -13,7 +13,7 @@ function getVariant(variant: ButtonProps['variant'], disabled: ButtonProps['disa
       variantStyle = 'bg-secondary text-white'
       break;
     case 'tertiary':
-      variantStyle = ''
+      return disabled ? 'bg-white text-disabled' : 'bg-white text-primary'
       break;
     default:
       variantStyle = 'bg-primary text-white'
