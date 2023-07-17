@@ -36,3 +36,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Figma
+[Open figma](https://www.figma.com/file/1fVxbDdsIkksUd4jdzDRtx/React%3A-Design-System-com-Tailwind-(Copy)?type=design&node-id=143-3228&mode=design&t=VrN8JAMYLpKWydNK-0)
