@@ -9,10 +9,14 @@ const meta: Meta<ButtonProps> = {
       type: 'string'
     },
     disabled: {
-      type: "boolean"
+      type: "boolean",
+      defaultValue: false,
+      description: "The default value is false."
     },
     className: {
-      type: "string"
+      type: "string",
+      defaultValue: "",
+      description: "The value acceptable are '' or 'theme-violet'."
     }
   }
 }
