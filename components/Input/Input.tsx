@@ -6,7 +6,7 @@ export type InputProps = {
     React.TextareaHTMLAttributes<HTMLTextAreaElement>
   )
 
-const Input = ({ label, multiline = false, ...rest }: InputProps) => {
+const InputOrTextArea = ({ multiline = false, ...rest }: InputProps) => {
   return (
     <>
       {
@@ -15,6 +15,21 @@ const Input = ({ label, multiline = false, ...rest }: InputProps) => {
           : (<input {...rest as React.InputHTMLAttributes<HTMLInputElement>} />)
       }
     </>
+  )
+}
+const Input = ({ label, className, ...rest }: InputProps) => {
+  return (
+    <div className="relative">
+      {label && <label className="absolute">{label}</label>}
+      <InputOrTextArea
+        {...rest}
+        className={`
+          bg-dark text-gray-primary
+          disabled:bg-disabled disabled:border-2 disabled:border-disabled
+          ${className}
+        `}
+      />
+    </div>
   )
 }
 
