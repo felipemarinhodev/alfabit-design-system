@@ -17,3 +17,9 @@ export const Primary: StoryObj<DividerPros> = {
   args: {
   }
 }
+
+export const WithText: StoryObj<DividerPros> = {
+  args: {
+    children: "Text"
+  }
+}
