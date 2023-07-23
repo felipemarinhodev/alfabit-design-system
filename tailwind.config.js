@@ -43,6 +43,9 @@ module.exports = {
       md: 'var(--text-md) /* 16px */',
       lg: 'var(--text-lg) /* 18px */',
       xl: 'var(--text-xl) /* 20px */',
+      tmd: "var(--title-md)",
+      tlg: "var(--title-lg)",
+      txl: "var(--title-xl)",
     },
     extend: {
       colors: {
@@ -60,6 +63,8 @@ module.exports = {
       backgroundColor: {
         light: 'rgba(var(--bg-light), <alpha-value>)',
         dark: 'rgba(var(--bg-dark), <alpha-value>)',
+        success: "rgba(var(--text-success), <alpha-value>)",
+        error: "rgba(var(--text-error), <alpha-value>)",
         disabled: 'rgba(var(--bg-disabled), <alpha-value>)',
       },
       textColor: {
@@ -68,6 +73,8 @@ module.exports = {
           secondary: 'rgba(var(--text-secondary), <alpha-value>)',
           tertiary: 'rgba(var(--text-tertiary), <alpha-value>)'
         },
+        success: "rgba(var(--text-success), <alpha-value>)",
+        error: "rgba(var(--text-error), <alpha-value>)",
       },
       boxShadow: {
         sm: 'var(--shadow-sm)',
