@@ -1,3 +1,5 @@
+import classNames from "classnames";
+
 export type BoxProps = {
   children: React.ReactNode;
   border?: boolean;
@@ -19,12 +21,21 @@ const Box = ({
   children,
   border = false,
   rounded = false,
+  filledBackground = false,
   type = 'primary',
   className,
   ...rest
 }: BoxProps) => {
+
+  const classes = classNames({
+    "rounded-md": rounded,
+    "border border-gray-100": border,
+    "bg-dark": filledBackground,
+    [boxClassMap[type]]: type
+  })
+
   return (
-    <div {...rest}>
+    <div className={classes} {...rest}>
       {children}
     </div>
   );
