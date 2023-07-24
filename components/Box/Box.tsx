@@ -32,7 +32,7 @@ const Box = ({
     "border border-gray-100": border,
     "bg-dark": filledBackground,
     [boxClassMap[type]]: type
-  })
+  }, className)
 
   return (
     <div className={classes} {...rest}>
