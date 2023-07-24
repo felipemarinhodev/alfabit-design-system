@@ -7,7 +7,10 @@ const meta: Meta<AvatarProps> = {
   argTypes: {
     className: {
       type: "string"
-    }
+    },
+    size: { type: "string" },
+    image: { type: "string" },
+    description: { type: "string" }
   }
 }
 
@@ -15,4 +18,15 @@ export default meta;
 
 export const Primary: StoryObj<AvatarProps> = {
   args: { }
+}
+
+export const Default: StoryObj<AvatarProps> = {
+  args: { }
+}
+
+export const AvatarImage: StoryObj<AvatarProps> = {
+  args: { 
+    size: "lg",
+    image: "https://placehold.co/400x400.png"
+  }
 }
