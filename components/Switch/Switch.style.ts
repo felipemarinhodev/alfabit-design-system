@@ -12,7 +12,7 @@ function useStyle({variant, enabled, disabled}: SwitchProps) {
         variant: {
           common: classNames(
             {"bg-primary": enabled},
-            {"bg-primary hover:bg-primaryHover": !enabled},
+            {"bg-tertiary hover:bg-primaryHover": !enabled},
           ),
           contract: classNames(
             {"bg-success": enabled},
@@ -27,7 +27,7 @@ function useStyle({variant, enabled, disabled}: SwitchProps) {
   );
   const containerClasses = containerVariant({ variant });
   const switchClasses = classNames(
-    'inline-block bg-white h-5 w-4 rounded-full transform transition-transform duration-200 ease-in-out',
+    'inline-block bg-white h-5 w-5 rounded-full transform transition-transform duration-200 ease-in-out',
     enabled ? 'translate-x-[2.1rem]' : 'translate-x-1'
   );
 
