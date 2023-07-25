@@ -10,7 +10,7 @@ export type SwitchProps = {
   variant?: 'common' | 'contract';
   disabled?: boolean;
   onChange?: (enabled: boolean) => void;
-};
+} & HeadlessSwitchProps<any>;
 
 const Switch = ({
   defaultEnable: enabledByDefault,
@@ -33,6 +33,7 @@ const Switch = ({
       disabled={disabled}
       {...rest}
     >
+      <span>switch toggle</span>
       {variant === 'common' && <span />}
       {variant === 'contract' &&
         <span>
