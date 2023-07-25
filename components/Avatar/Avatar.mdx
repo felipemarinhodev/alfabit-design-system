@@ -2,17 +2,28 @@ import {Meta, Primary, Canvas, Controls} from "@storybook/blocks";
 
 import * as Story from "./Avatar.stories.ts"
 
-<Meta of={Story} />
+<Meta of={Story} layout="centered" />
 
 # Avatar
 
 This is a component of Avatar.
 
 ### Default
-<Canvas of={Story.Default} />
+<Canvas of={Story.Default} layout="centered" />
 
 ### Avatar Image
-<Canvas of={Story.AvatarImage} />
+<Canvas of={Story.AvatarImage} layout="centered" />
+
+## Sizes
+
+### Extreme Small
+<Canvas of={Story.ExtremeSmall} layout="centered" />
+### Small
+<Canvas of={Story.Small} layout="centered" />
+### Medium
+<Canvas of={Story.Medium} layout="centered" />
+### Large
+<Canvas of={Story.Large} layout="centered" />
 
 ## Interactive Documentation
 

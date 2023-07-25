@@ -19,9 +19,32 @@ export default meta;
 export const Primary: StoryObj<AvatarProps> = {
   args: { }
 }
-
 export const Default: StoryObj<AvatarProps> = {
   args: { }
+}
+
+export const ExtremeSmall: StoryObj<AvatarProps> = {
+  args: {
+    size: 'xs'
+   }
+}
+
+export const Small: StoryObj<AvatarProps> = {
+  args: {
+    size: 'sm'
+   }
+}
+
+export const Medium: StoryObj<AvatarProps> = {
+  args: {
+    size: 'md'
+   }
+}
+
+export const Large: StoryObj<AvatarProps> = {
+  args: {
+    size: 'lg'
+   }
 }
 
 export const AvatarImage: StoryObj<AvatarProps> = {
