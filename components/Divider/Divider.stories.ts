@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
-import Divider, { DividerPros } from "./Divider";
+import Divider, { DividerProps } from "./Divider";
 
-const meta: Meta<DividerPros> = {
+const meta: Meta<DividerProps> = {
   title: "Design System/Atoms/Divider",
   component: Divider,
   argTypes: {
@@ -13,12 +13,12 @@ const meta: Meta<DividerPros> = {
 
 export default meta;
 
-export const Primary: StoryObj<DividerPros> = {
+export const Primary: StoryObj<DividerProps> = {
   args: {
   }
 }
 
-export const WithText: StoryObj<DividerPros> = {
+export const WithText: StoryObj<DividerProps> = {
   args: {
     children: "Text"
   }

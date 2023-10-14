@@ -1,6 +1,6 @@
 import classNames from "classnames";
 
-export type DividerPros = {
+export type DividerProps = {
   width?: string;
   height?: string;
   bgColor?: 'light' | 'dark' | 'black';
@@ -19,7 +19,7 @@ const Divider = ({
   bgColor = 'black',
   children,
   ...rest
-}: DividerPros) => {
+}: DividerProps) => {
   const colorClass = colorClassMap[bgColor];
   const barClass = classNames(
     children ? 'w-1/3' : 'w-1/2',
