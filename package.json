@@ -1,5 +1,5 @@
 {
-  "name": "alfabit-design-system",
+  "name": "alfabit-fm-ds",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -41,5 +41,15 @@
     "chromatic": "^7.4.0",
     "eslint-plugin-storybook": "^0.6.15",
     "storybook": "^7.4.6"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "components/index.ts",
+  "author": "felipemarinhodev",
+  "license": "ISC",
+  "files": [
+    "styles/globals.css",
+    "tailwind.config.js",
+    "components/*",
+    "fonts/*"
+  ]
 }
