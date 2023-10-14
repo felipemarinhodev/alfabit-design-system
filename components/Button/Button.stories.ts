@@ -17,6 +17,9 @@ const meta: Meta<ButtonProps> = {
       type: "string",
       defaultValue: "",
       description: "The value acceptable are '' or 'theme-violet'."
+    },
+    onClick: {
+      action: 'clicked'
     }
   }
 }
