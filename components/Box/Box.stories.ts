@@ -7,7 +7,20 @@ const meta: Meta<BoxProps> = {
   argTypes: {
     className: { type: "string" },
     children: { type: "string" },
-    type: { type: "string" },
+    type: {
+      type: "string",
+      options: [
+        'alert',
+        'primary',
+        'secondary',
+        'dark',
+        'success',
+        'error'
+      ],
+      control: {
+        type: 'select'
+      } 
+    },
     rounded: { type: "boolean" },
     border: { type: "boolean" },
     filledBackground: { type: "boolean" },
