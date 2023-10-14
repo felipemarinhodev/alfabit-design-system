@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import Box, { BoxProps } from "./Box";
 
 const meta: Meta<BoxProps> = {
-  title: "Atoms/Box",
+  title: "Design System/Atoms/Box",
   component: Box,
   argTypes: {
     className: { type: "string" },

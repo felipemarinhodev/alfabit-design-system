@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Dropdown, { type DropdownProps } from "./Dropdown";
 
 const meta: Meta<DropdownProps> = {
-  title: 'Molecules/Dropdown',
+  title: 'Design System/Molecules/Dropdown',
   component: Dropdown,
   decorators: [(Story) => (
     <div style={{ paddingBottom: "15em", paddingTop: "3em" }}>

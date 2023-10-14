@@ -3,7 +3,7 @@ import Notice, { NoticeProps } from "./Notice";
 
 
 const meta: Meta<NoticeProps> = {
-  title: 'Molecules/Notice',
+  title: 'Design System/Molecules/Notice',
   component: Notice,
   argTypes: {
     children: {
